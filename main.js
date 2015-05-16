@@ -82,11 +82,29 @@ document.querySelector('#answer3').textContent = answer3;
 
 // Question 4
 
-// Map items by material
+var madeOfWood = [];
 
-var mat = items.map(function(item) {
-return item.materials;
+items.filter( function(item) {
+ item.materials.forEach (function(item2) {
+   if (item2 === "wood") {
+   madeOfWood.push(item.title)
+   }
+ });
 });
+
+var answer4 = console.log(madeOfWood);
+
+document.querySelector('#answer4').textContent = madeOfWood;
+
+// End Question 4
+
+// Question 5
+
+
+// End Question 5
+
+
+
 
 // Question 6
 
@@ -104,7 +122,7 @@ var answer6 = whoMade.length
 
 document.querySelector('#answer6').textContent = answer6 + " were made by their sellers"
 
-
+// End Question 6
 
 
 
