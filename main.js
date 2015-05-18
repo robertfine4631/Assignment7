@@ -99,7 +99,24 @@ document.querySelector('#answer4').textContent = madeOfWood;
 // End Question 4
 
 // Question 5
+var ans5 = document.querySelector.('#answer5');
+answer5.innerHTML = '';
 
+var no5 = items.filter(function(item){
+	return  item.materials.length >= 8;
+});
+
+
+no5.forEach(function( item){
+	var title = item.title;
+	var materials = item.materials;
+	var length = materials.length;
+
+	var titleAndLength = title + ' has ' + length = ' materials:' + '\n';
+
+ans5.appendChild(document.createTextNode(titleAndLength));
+
+});
 
 // End Question 5
 
