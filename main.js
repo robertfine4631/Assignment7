@@ -101,6 +101,7 @@ document.querySelector('#answer4').textContent = madeOfWood;
 // Question 5
 var ans5 = document.querySelector.('#answer5');
 answer5.innerHTML = '';
+<<<<<<< HEAD
 
 var no5 = items.filter(function(item){
 	return  item.materials.length >= 8;
@@ -117,7 +118,27 @@ no5.forEach(function( item){
 ans5.appendChild(document.createTextNode(titleAndLength));
 
 });
+=======
+>>>>>>> gh-pages
 
+var no5 = items.filter(function(item){
+	return  item.materials.length >= 8;
+});
+
+var title, materials, length, titleAndLength;
+
+no5.forEach(function( item){
+title = item.title;
+ materials = item.materials;
+ length = materials.length;
+ titleAndLength = title + ' has ' + length = ' materials:' + '\n';
+
+ans5.appendChild(document.createTextNode(titleAndLength));
+materials.forEach( function (material){
+	ans5.appendChild(document.createTextNode(material + '\n'));
+});
+
+});
 
 // End Question 5
 
