@@ -106,15 +106,18 @@ var no5 = items.filter(function(item){
 	return  item.materials.length >= 8;
 });
 
+var title, materials, length, titleAndLength;
 
 no5.forEach(function( item){
-	var title = item.title;
-	var materials = item.materials;
-	var length = materials.length;
-
-	var titleAndLength = title + ' has ' + length = ' materials:' + '\n';
+title = item.title;
+ materials = item.materials;
+ length = materials.length;
+ titleAndLength = title + ' has ' + length = ' materials:' + '\n';
 
 ans5.appendChild(document.createTextNode(titleAndLength));
+materials.forEach( function (material){
+	ans5.appendChild(document.createTextNode(material + '\n'));
+});
 
 });
 
