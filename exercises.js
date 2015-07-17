@@ -100,9 +100,12 @@ console.log("enter an array of words. Example ['anna', 'banna', 'foo-fighters']"
 // ---------------------
 
 function filterLongWords(words, i){
-    //...
+    words.filter( function(words){
+        return words.length > i;
+    });
 }
-
+console.log(filterLongWords);
+console.log("function takes 2 params, one an array of words, and the other a number. example: (['blue', 'red', 'green'], 3) ")
 // ---------------------
 // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
 // ---------------------
