@@ -73,9 +73,11 @@ console.log('use numbers separated by commas and in [] format. EX [1,2,3]');
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
+function reverse(string){
+    string.split('').reverse()
 }
+console.log(reverse);
+console.log("enter a string to be reversed");
 
 // ---------------------
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
