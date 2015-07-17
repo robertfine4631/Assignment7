@@ -52,10 +52,14 @@ function rovarspraket(phrase){
 // ---------------------
 
 
-function sum(){
+function sum(numbers){
+    return numbers.reduce( function (x, y) {
+        return x + y;
+    });
+
 }
 console.log(sum);
-console.log('use numbers separated by commas');
+console.log('use numbers separated by commas and in [] format. EX [1, 2, 3]');
 function multiply(){
     //...
 }
