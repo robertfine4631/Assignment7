@@ -60,9 +60,14 @@ function sum(numbers){
 }
 console.log(sum);
 console.log('use numbers separated by commas and in [] format. EX [1, 2, 3]');
-function multiply(){
-    //...
+
+function multiply(numbers){
+    return numbers.reduce( function (x, y){
+        return x * y;
+    });
 }
+console.log(multiply);
+console.log('use numbers separated by commas and in [] format. EX [1,2,3]');
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
