@@ -84,9 +84,17 @@ console.log("enter a string to be reversed");
 // ---------------------
 
 function findLongestWord(words){
-    //...
+    return words.reduce( function(x,y){
+        if ( x > y) {
+            return x;
+        }
+        else {
+            return y;
+        }
+    });
 }
-
+console.log(findLongestWord);
+console.log("enter an array of words. Example ['anna', 'banna', 'foo-fighters']")
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
