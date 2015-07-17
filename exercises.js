@@ -100,7 +100,7 @@ console.log("enter an array of words. Example ['anna', 'banna', 'foo-fighters']"
 // ---------------------
 
 function filterLongWords(words, i){
-    words.filter( function(words){
+    return words.filter( function(words){
         return words.length > i;
     });
 }
