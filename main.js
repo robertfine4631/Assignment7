@@ -98,46 +98,61 @@ document.querySelector('#answer4').textContent = madeOfWood;
 
 // End Question 4
 
-// Question 5
-var ans5 = document.querySelector.('#answer5');
-answer5.innerHTML = '';
+// Question 5 *commented out previous answer*
 
-var no5 = items.filter(function(item){
-	return  item.materials.length >= 8;
+
+// var ans5 = document.querySelector('#answer5');
+// answer5.innerHTML = '';
+
+// var no5 = items.filter(function(item){
+// 	return  item.materials.length >= 8;
+// });
+
+
+// no5.forEach(function( item){
+// 	var title = item.title;
+// 	var materials = item.materials;
+// 	var length = materials.length;
+
+// 	// var titleAndLength = title + ' has ' + length = ' materials:' + '\n';
+
+// ans5.appendChild(document.createTextNode(titleAndLength));
+
+// });
+
+
+// var no5 = items.filter(function(item){
+// 	return  item.materials.length >= 8;
+// });
+
+// var title, materials, length, titleAndLength;
+
+// no5.forEach(function( item){
+// title = item.title;
+//  materials = item.materials;
+//  length = materials.length;
+//  // titleAndLength = title + ' has ' + length = ' materials:' + '\n';
+
+// ans5.appendChild(document.createTextNode(titleAndLength));
+// materials.forEach( function (material){
+// 	ans5.appendChild(document.createTextNode(material + '\n'));
+// });
+
+// });
+// Begin New Question 5
+
+var num5 = items.filter(function(item){
+   return item.materials.length >= 8;
 });
 
+/* Map the title, number of materials and the names of each material from the new array created*/
 
-no5.forEach(function( item){
-	var title = item.title;
-	var materials = item.materials;
-	var length = materials.length;
+var num51 = num5.map(function(item){
+  return item.title + ' ' + item.materials.length + ':\n' + item.materials.join('\n') + '\n \n';
+})
 
-	var titleAndLength = title + ' has ' + length = ' materials:' + '\n';
+document.querySelector('#answer5').textContent = num51.join('');
 
-ans5.appendChild(document.createTextNode(titleAndLength));
-
-});
-=======
->>>>>>> gh-pages
-
-var no5 = items.filter(function(item){
-	return  item.materials.length >= 8;
-});
-
-var title, materials, length, titleAndLength;
-
-no5.forEach(function( item){
-title = item.title;
- materials = item.materials;
- length = materials.length;
- titleAndLength = title + ' has ' + length = ' materials:' + '\n';
-
-ans5.appendChild(document.createTextNode(titleAndLength));
-materials.forEach( function (material){
-	ans5.appendChild(document.createTextNode(material + '\n'));
-});
-
-});
 
 // End Question 5
 
@@ -158,7 +173,7 @@ var answer6 = whoMade.length
 
 // Drop answer in DOM Node
 
-document.querySelector('#answer6').textContent = answer6 + " were made by their sellers"
+document.querySelector('#answer6').textContent = answer6 + " were made by their sellers";
 
 // End Question 6
 
