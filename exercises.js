@@ -52,8 +52,7 @@ function rovarspraket(phrase){
 // ---------------------
 
 
-function sum(newArray){
-    return newArray;
+function sum(){
 }
 console.log(sum);
 console.log('use numbers separated by commas');
