@@ -73,7 +73,7 @@ var answer3 = GBP.map(function(item) {
 return item.title + item.price;
 });
 
-// Drop answer in DOM Node 
+// Drop answer in DOM Node
 
 document.querySelector('#answer3').textContent = answer3;
 
@@ -101,7 +101,6 @@ document.querySelector('#answer4').textContent = madeOfWood;
 // Question 5
 var ans5 = document.querySelector.('#answer5');
 answer5.innerHTML = '';
-<<<<<<< HEAD
 
 var no5 = items.filter(function(item){
 	return  item.materials.length >= 8;
