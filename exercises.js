@@ -85,7 +85,7 @@ console.log("enter a string to be reversed");
 
 function findLongestWord(words){
     return words.reduce( function(x,y){
-        if ( x > y) {
+        if ( x.length > y.length ) {
             return x;
         }
         else {
