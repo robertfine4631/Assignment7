@@ -44,17 +44,19 @@ console.log("enter a single character to determine if it is a vowel");
 // ---------------------
 
 function rovarspraket(phrase){
-    //...
+
 }
 
 // ---------------------
 // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
 // ---------------------
 
-function sum(){
-    //...
-}
 
+function sum(newArray){
+    return newArray;
+}
+console.log(sum);
+console.log('use numbers separated by commas');
 function multiply(){
     //...
 }
