@@ -74,7 +74,7 @@ console.log('use numbers separated by commas and in [] format. EX [1,2,3]');
 // ---------------------
 
 function reverse(string){
-    string.split('').reverse()
+    return string.split('').reverse()
 }
 console.log(reverse);
 console.log("enter a string to be reversed");
