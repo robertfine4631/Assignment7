@@ -111,5 +111,19 @@ console.log("function takes 2 params, one an array of words, and the other a num
 // ---------------------
 
 function charFreq(string){
-    //...
+    var obj = {}; //empty object to pass answer into
+
+    string.split('').forEach( function (char){
+        if (obj[char]){
+            obj[char]++;
+        }
+        else {
+            obj[char] = 1;
+        }
+    });
+    return obj;
 }
+
+console.log(charFreq);
+console.log('function takes in a string');
+
