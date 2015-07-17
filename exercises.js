@@ -28,8 +28,16 @@ console.log("use numbers");
 // ---------------------
 
 function isVowel(char){
-    //...
+    if ( char == "a" ||char == "e" || char == "i" || char == "o" || char == "u" ) {
+        return "true";
+    }
+    else {
+        return "false"
+    }
 }
+
+console.log(isVowel);
+console.log("enter a single character to determine if it is a vowel");
 
 // ---------------------
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
