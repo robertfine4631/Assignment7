@@ -43,7 +43,7 @@ console.log("enter a single character to determine if it is a vowel");
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
-//on this one, stack overflow helped out a whole lot
+//on this one, stack overflow helped out a whole lot (http://stackoverflow.com/questions/31420409/creating-a-frequency-listing-of-characters)
 var translation = [];
 
 function rovarspraket(phrase){
